@@ -1,13 +1,14 @@
 {% load render_bundle from webpack_loader %}
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Example</title>
-  </head>
-
-  <body>
-    <div id="react-app"></div>
-    {% render_bundle 'main' %}
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Example Index</title>
+</head>
+<body>
+  <h1>Hello from Django Template</h1>
+  <hr />
+  <div id="root"></div>
+  {% render_bundle 'main' %}
+</body>
 </html>

@@ -5,12 +5,17 @@
   "repository": "git@github.com:gsong/modern-devstack.git",
   "author": "George Song <george@monozuku.com>",
   "license": "MIT",
+  "scripts": {
+    "start": "webpack-dev-server"
+  },
   "devDependencies": {
     "babel-core": "^6.24.1",
     "babel-loader": "^6.4.1",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.0",
     "path": "^0.12.7",
+    "style-loader": "^0.16.1",
     "webpack": "^2.3.3",
     "webpack-bundle-tracker": "^0.2.0",
     "webpack-dev-server": "^2.4.2"
