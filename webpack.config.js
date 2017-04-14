@@ -33,6 +33,8 @@ module.exports = {
   devtool: 'eval',
 
   devServer: {
+    host: "0.0.0.0",
+
     hot: true,
     // enable HMR on the server
 

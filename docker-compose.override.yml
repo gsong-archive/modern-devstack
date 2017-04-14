@@ -1,0 +1,30 @@
+version: '3.1'
+
+services:
+  # Primary services
+  app:
+    image: modern/dev
+    container_name: modern_dev
+    command: ./manage.py runserver 0.0.0.0:8000
+    networks:
+      - assets
+    volumes:
+      - .:/app
+    ports:
+      - "8000:8000"
+
+  # Asset pipeline
+  asset:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.webpack
+    command: npm start
+    networks:
+      - assets
+    volumes:
+      - .:/app
+    ports:
+      - "8080:8080"
+
+networks:
+  assets:

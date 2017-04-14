@@ -6,6 +6,11 @@ import styles from './Counter.css'
 
 
 export default class Counter1 extends Counter {
+  tick() {
+    const increment = 2
+    this.setState(({counter}) => ({counter: counter + increment}))
+  }
+
   render() {
     const {counter} = this.state
 
