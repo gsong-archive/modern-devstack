@@ -18,6 +18,8 @@ services:
     build:
       context: .
       dockerfile: docker/Dockerfile.webpack
+    image: modern/asset
+    container_name: modern_asset
     command: npm start
     networks:
       - assets

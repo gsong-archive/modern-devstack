@@ -9,7 +9,7 @@ const App = () => {
 
   return (
     <div className={styles.app}>
-      <h1>Hello from the App Container 🐣</h1>
+      <h1>Hello from the App Container 💪</h1>
       <p>Showing off Webpack Hot Module Replacement (“HMR”)</p>
       <Counter1 />
       <Counter2 />
