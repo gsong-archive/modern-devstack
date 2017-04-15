@@ -5,7 +5,7 @@ services:
   app:
     image: modern/dev
     container_name: modern_dev
-    command: ./manage.py runserver 0.0.0.0:8000
+    command: bin/app-dev-start.sh
     networks:
       - assets
     volumes:
@@ -20,7 +20,7 @@ services:
       dockerfile: docker/Dockerfile.webpack
     image: modern/asset
     container_name: modern_asset
-    command: npm start
+    command: bin/asset-dev-start.sh
     networks:
       - assets
     volumes:
